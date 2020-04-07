@@ -1,0 +1,9 @@
+{% extends 'myfirst_app/base.html'%}
+{% block body_block %}
+<h1> Home page </h1>
+{% if user.is_authenticated %}
+<h1> Welocme {{ user.username }}!</h1>
+{% else %}
+<h1> Welcome Thala </h1>
+{% endif %}
+{% endblock %}

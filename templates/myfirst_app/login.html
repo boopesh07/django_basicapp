@@ -1,0 +1,11 @@
+{% extends "myfirst_app/base.html" %}
+{% block body_block  %}
+<form method="post">
+  {% csrf_token %}
+<label for="username"> Username</label>
+<input type="text" name="username" value="">
+<label for="password">Password</label>
+<input type="password" name="password" value="">
+<input type="submit" name="" value="submit">
+</form>
+{% endblock %}
